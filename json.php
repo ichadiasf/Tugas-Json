@@ -1,0 +1,30 @@
+<?php
+$json_data=file_get_contents("mahasiswa.json");
+$obj = json_decode($json_data);
+echo "NIM : "; echo $obj->nim;
+echo "<br>";
+echo "Nama : "; echo $obj->nama;
+echo "<br>";
+echo "No HP : "; echo $obj->no_hp;
+echo "<br>";
+echo "Mata Kuliah: ";
+echo "<br>";
+echo $obj->matakuliah[0];
+echo "<br>";
+echo "";echo $obj->matakuliah[1];
+echo "<br>";
+echo "";echo $obj->matakuliah[2];
+echo "<br>";
+echo "";echo $obj->matakuliah[3];
+echo "<br>";
+echo "";echo $obj->matakuliah[4];
+echo "<br>";
+echo "";echo $obj->matakuliah[5];
+echo "<br>";
+echo "";echo $obj->matakuliah[6];
+echo "<br>";
+echo "";echo $obj->matakuliah[7];
+echo "<br>";
+echo "";echo $obj->matakuliah[8];
+echo "<br>";
+?>
